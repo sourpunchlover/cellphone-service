@@ -24,15 +24,17 @@ public class CellPhoneApplication {
         String owner = scanner.nextLine();
 
         CellPhone apple = new CellPhone(0, "", "", "", "");
-        //System.out.println(apple.getSerialNumber());
-        //System.out.println(apple.getModel());
-        //System.out.println(apple.getCarrier());
-        //System.out.println(apple.getPhoneNumber());
-        //System.out.println(apple.getOwner());
+
         apple.setSerialNumber(serialNumber);
         apple.setModel(model);
         apple.setCarrier(carrier);
         apple.setPhoneNumber(phoneNumber);
         apple.setOwner(owner);
+
+        System.out.println(apple.getSerialNumber());
+        System.out.println(apple.getModel());
+        System.out.println(apple.getCarrier());
+        System.out.println(apple.getPhoneNumber());
+        System.out.println(apple.getOwner());
     }
 }
